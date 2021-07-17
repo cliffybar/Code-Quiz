@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
+    <title>Code Quiz</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>True or False Game</title>
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="game.js" type="text/javascript"></script>
   </head>
 
   <body>
-    <script src="./styles/js/game.js"></script>
+
+    <div id="nav">
+      <div class="left">
+        <a onclick="getScore()" href="#"><h4>View Highscore</h4></a>
+      </div>
+      <div class="right">
+        <h4>Time: <span id="timeLeft">0</span></h4>
+      </div>
+    </div>
+
+    <div id="quiz">
+      <div id="quizBody">
+        <h1>JavaScript Quiz!</h1>
+        <h3>Click to play!</h3>
+        <button onclick="start()">Start!</button>
+      </div>
+    </div>
+
   </body>
 </html>
